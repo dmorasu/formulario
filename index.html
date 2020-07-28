@@ -8,28 +8,30 @@
     <title>Formulario Web</title>
 </head>
 <body>
-    <main id="contenedor">
-        <header>
-            <h1>Escuela de Excel Mundo Mas</h1>
-            <h4>Para nosotros es muy importante que se una a nuestras escueala, lo invitamos a realizar la siguiente encuensta.</h4>
-        </header>
-            <form action="#" id="formulario">
+  
+        <div class="contenedor">
+            <header class="cabecera">
+                 <h1 class="#descripcion">Escuela de Excel Mundo Mas</h1>
+                 <p class="descripcion">Para nosotros es muy importante que se una a nuestras escueala, lo invitamos a realizar la siguiente encuensta.</p>
+            </header>
+        
+            <form action="#">
      
-                <div class="frm_cuerpo">
+                <div class="divisiones">
                     <label for="nombre">Nombre</label><br/>
-                    <input type="text" class="caputador_texto" required/>
+                    <input type="text" class="frm" required/>
                 </div>
-                <div class="frm_cuerpo">
+                <div class="divisiones">
                     <label for="mail">Correo Electronico</label><br/>
-                    <input type="text" class="caputador_texto" />
+                    <input type="text" class="frm" />
                 </div>
-                <div class="frm_cuerpo">
-                    <label for="edad">Edad</label><br/>
-                    <input type="text" class="caputador_texto" required/>
+                <div  class="divisiones">
+                    <label for="edad" >Edad</label><br/>
+                    <input type="text" class="frm" required/>
                 </div>
-                <div class="frm_cuerpo">
+                <div  class="divisiones">
                     <label for="lista">Nivel de Excel</label><br/>
-                    <select name="nivel" id="nivel" class="caputador_texto" required>
+                    <select name="nivel" id="nivel" class="frm" required>
                         <option value="opcion">selecione una opción</option>
                         <option value="bajo">Bajo</option>
                         <option value="intermedio">Intermedio</option>
@@ -38,34 +40,38 @@
                     </select>
                 </div>
                 
-                <div class="frm_cuerpo">
+                <div class="divisiones" >
                     <legend>¿En cuales de estos escenarios has visto la necesidad de saber Excel?</legend>
-                    <label for=""> <input type="radio" name="grop" checked> En la Oficina</label><br/>
-                    <label for=""> <input type="radio" name="grop"> En el Colegio o Univerisad </label><br/>
-                    <label for=""> <input type="radio" name="grop"> En mi propio Negocio</label><br/>
+                    <label for=""> <input type="radio" name="grop" class="input-radio" checked> En la Oficina</label><br/>
+                    <label for=""> <input type="radio" name="grop" class="input-radio">  En el Colegio o Univerisad </label><br/>
+                    <label for=""> <input type="radio" name="grop" class="input-radio"> En mi propio Negocio</label><br/>
                     
                 </div>
 
-                <div class="frm_cuerpo">
+                <div class="divisiones">
                     <legend>Cuales son los temas de Excel que mas le llama la atención</legend>
-                    <label for=""> <input type="checkbox"> Tablas Dinamicas </label><br/>
-                    <label for=""> <input type="checkbox"> Graficos e Informes</label><br/>
-                    <label for=""> <input type="checkbox"> Subtotales y Agrupaciones</label><br/>
-                    <label for=""> <input type="checkbox">Macros</label><br/>
-                    <label for=""><input type="checkbox">Combinacion de Correspondencia</label><br/>
-                    <label for=""><input type="checkbox">Enlace con bases de Datos</label><br/>
+                    <label for=""> <input type="checkbox" class=" input-checkbox "> Tablas Dinamicas </label><br/>
+                    <label for=""> <input type="checkbox" class=" input-checkbox "> Graficos e Informes</label><br/>
+                    <label for=""> <input type="checkbox" class=" input-checkbox "> Subtotales y Agrupaciones</label><br/>
+                    <label for=""> <input type="checkbox" class=" input-checkbox ">Macros</label><br/>
+                    <label for=""><input type="checkbox" class=" input-checkbox ">Combinacion de Correspondencia</label><br/>
+                    <label for=""><input type="checkbox" class=" input-checkbox ">Enlace con bases de Datos</label><br/>
                 </div>
-                <div class="frm_cuerpo">
+                <div class="divisiones" class="frm">
                     <legend>Por ultimo, haga una breve descripcion de sus necesidade en Excel</legend>
-                    <textarea name="cajatotal" class="caputador_texto"></textarea><br/>
+                    <textarea name="cajatotal" class="caputador_texto" class=" input-textarea"></textarea><br/>
 
                 </div>
-                <button class="caputador_texto">Enviar</button>
+
+                <div class="divisiones" class="frm">
+                    <button class="btnenviar">Enviar</button>
+                </div>
+                
             </form>
             
-        </header>
+        </div>
 
-    </main>
+    
     
 </body>
 </html>
